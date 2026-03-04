@@ -36,7 +36,7 @@
                     <article class="event-card">
                         <div class="event-card__img" style="background-image: url('<?php the_field('event_img'); ?>');">
                             <div class="event-card__badge"> <?php
-                                                            $term = get_field('kategoriya'); // Впишите сюда имя (Label) самого поля ACF
+                                                            $term = get_field('kategoriya'); 
                                                             if ($term): ?>
                                     <?php echo esc_html($term->name); ?>
                                 <?php else: ?>
@@ -75,6 +75,7 @@
         </div>
     </section>
 </main>
+
 
 
 <?php get_footer(); ?>
